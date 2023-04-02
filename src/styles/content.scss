@@ -1,0 +1,89 @@
+@import "../styles/utils/colors.scss";
+
+main {
+  width: 100%;
+  margin: 0 auto;
+
+  .content {
+    padding: 32px;
+
+    .best_foods {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      text-align: left;
+
+      h1 {
+        font-weight: 700;
+        font-size: 2em;
+        margin-bottom: 5px;
+      }
+
+      .list {
+        margin: 32px auto auto;
+        text-align: left;
+        display: grid;
+        grid-row-gap: 16px;
+
+        .list_items {
+          width: 100%;
+          border-radius: 5px;
+          overflow: hidden;
+          position: relative;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+          .list_items_images {
+            width: 100%;
+            max-height: 200px;
+          }
+
+          .city {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 500;
+            padding: 18px 15px 18px;
+            border-radius: 0 0 10px;
+            color: $color-white;
+            background-color: $color-yellow;
+          }
+
+          .list_items_content {
+            padding: 16px;
+
+            .list_items_rate {
+              font-size: 12px;
+              text-transform: uppercase;
+              color: $color-gray;
+              font-weight: 500;
+
+              .list_items_rate_value {
+                color: $color-red;
+              }
+            }
+
+            .list_items_title {
+              font-weight: 500;
+              font-size: 16px;
+              margin-top: 10px;
+              transition: 0.3s opacity;
+
+              a {
+                color: $color-black !important;
+              }
+              a:hover {
+                opacity: 0.5;
+              }
+            }
+
+            .list_items_desc {
+              margin-top: 10px;
+              font-size: 12px;
+              line-height: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

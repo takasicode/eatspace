@@ -1,0 +1,16 @@
+@import "../styles/utils/colors.scss";
+
+.skip-link {
+  left: 0;
+  top: -100px;
+  color: $color-white;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  background-color: $color-red;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 100px;
+}

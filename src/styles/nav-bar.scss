@@ -1,0 +1,94 @@
+@import "../styles/utils/colors.scss";
+
+/* Mobile Navbar */
+.menu_mobile {
+  color: $color-white !important;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  justify-content: space-between;
+
+  .icon_menu a {
+    color: $color-black !important;
+  }
+
+  .logo_mobile a {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding: 1em;
+    line-height: 24px;
+    color: $color-yellow !important;
+  }
+}
+
+.nav_mobile {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+
+  .nav_list_mobile {
+    width: 100%;
+
+    .nav_items_mobile a {
+      line-height: 24px;
+      color: $color-white !important;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 1.3em;
+  }
+}
+
+/* Desktop Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  padding: 1em;
+  background-color: $color-white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      color: $color-yellow !important;
+    }
+  }
+
+  .nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+
+    .nav_items {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+
+      a {
+        display: inline-block;
+        color: $color-black !important;
+      }
+
+      a:hover {
+        font-weight: 700;
+        color: $color-yellow !important;
+      }
+    }
+  }
+}
