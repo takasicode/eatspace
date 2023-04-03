@@ -8,13 +8,4 @@ footer {
   padding: 2em;
   color: rgb(0, 0, 0);
   background-color: $color-white;
-
-  a {
-    color: $color-black !important;
-  }
-
-  a:hover {
-    font-weight: 700;
-    color: $color-yellow !important;
-  }
 }

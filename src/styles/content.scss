@@ -35,17 +35,17 @@ main {
           .list_items_images {
             width: 100%;
             max-height: 200px;
-          }
 
-          .city {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-weight: 500;
-            padding: 18px 15px 18px;
-            border-radius: 0 0 10px;
-            color: $color-white;
-            background-color: $color-yellow;
+            .city {
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-weight: 500;
+              padding: 18px 15px 18px;
+              border-radius: 0 0 10px;
+              color: $color-white;
+              background-color: $color-yellow;
+            }
           }
 
           .list_items_content {
@@ -65,10 +65,13 @@ main {
             .list_items_title {
               font-weight: 500;
               font-size: 16px;
-              margin-top: 10px;
               transition: 0.3s opacity;
 
               a {
+                display: flex;
+                align-items: center;
+                width: auto;
+                height: 44px;
                 color: $color-black !important;
               }
               a:hover {
@@ -77,7 +80,6 @@ main {
             }
 
             .list_items_desc {
-              margin-top: 10px;
               font-size: 12px;
               line-height: 1.5em;
             }

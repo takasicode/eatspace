@@ -22,20 +22,17 @@ import("../data/DATA.json").then(({ default: jsonData }) => {
   dataSlice.forEach(function (data) {
     dataList += `
       <div class="list_items">
-        <img class="list_items_images" src="${data["pictureId"]}" alt="${
-      data["name"]
-    }" title="${data["name"]}">
-        <div class="city">${data["city"]}</div>
+        <div class="list_items_images">
+          <div class="city">${data["city"]}</div>
+          <img class="list_items_images" src="${data["pictureId"]}" alt="${data["name"]}" title="${data["name"]}">
+        </div>
         <div class="list_items_content">
           <p class="list_items_rate">
             Rate : 
-            <a href="#" class="list_items_rate_value">${data["rating"]}</a>
+            <span class="list_items_rate_value">${data["rating"]}</span>
           </p>
             <h2 class="list_items_title"><a href="#">${data["name"]}</a></h2>
-            <div class="list_items_desc">${data["description"].slice(
-              0,
-              35
-            )}...</div>
+            <div class="list_items_desc">${data["description"].slice(0, 35)}...</div>
         </div>
       </div>
     `;
