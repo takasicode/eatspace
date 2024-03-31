@@ -29,4 +29,4 @@ Start the server
 ![App Screenshot](./src/public/images/screenshot/screencapture.png)
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=html,sass,js,npm,webpack)](https://github.com/takasicode/eatspace-v1)
+[![My Skills](https://skillicons.dev/icons?i=html,sass,js,nodejs,npm,webpack)](https://github.com/takasicode/eatspace-v1)
